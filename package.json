@@ -1,10 +1,7 @@
 {
   "name": "htmx.org",
   "description": "high power tools for html",
-  "keywords": [
-    "AJAX",
-    "HTML"
-  ],
+  "keywords": ["AJAX", "HTML"],
   "version": "1.9.10",
   "homepage": "https://htmx.org/",
   "bugs": {
@@ -35,6 +32,12 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bigskysoftware/htmx.git"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/htmx.d.ts",
+      "default": "./dist/htmx.min.js"
+    }
   },
   "devDependencies": {
     "chai": "^4.3.7",
